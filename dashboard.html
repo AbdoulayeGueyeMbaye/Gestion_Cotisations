@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de bord — Gérant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Cotisations Classe</h1>
+    <span class="role-badge">Gérant</span>
+  </header>
+
+  <nav class="app-nav">
+    <a href="dashboard.html" class="active">Tableau croisé</a>
+    <a href="paiement.html">Saisir paiement</a>
+    <a href="dashboard.html">Apprenants</a>
+    <a href="#">Campagnes</a>
+    <a href="../login.html">Déconnexion</a>
+  </nav>
+
+  <main class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="value">32</div>
+        <div class="label">Apprenants</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">12/40</div>
+        <div class="label">Semaine en cours</div>
+      </div>
+      <div class="stat-card">
+        <div class="value" style="color:var(--color-success);">850 000</div>
+        <div class="label">FCFA collectés</div>
+      </div>
+      <div class="stat-card">
+        <div class="value" style="color:var(--color-danger);">5</div>
+        <div class="label">Retardataires</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Suivi hebdomadaire — Semaines 1 à 12</div>
+      <div class="cross-table-wrapper">
+        <table class="cross-table">
+          <thead>
+            <tr>
+              <th>Apprenant</th>
+              <th>S1</th><th>S2</th><th>S3</th><th>S4</th><th>S5</th>
+              <th>S6</th><th>S7</th><th>S8</th><th>S9</th><th>S10</th>
+              <th>S11</th><th>S12</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name">Diallo A.</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+            </tr>
+            <tr>
+              <td class="name">Sow M.</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-late">✗</td>
+              <td class="status-late">✗</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-late">✗</td>
+            </tr>
+            <tr>
+              <td class="name">Ba K.</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-partial">½</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+            </tr>
+            <tr>
+              <td class="name">Ndiaye F.</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-paid">✓</td>
+              <td class="status-late">✗</td><td class="status-late">✗</td>
+              <td class="status-late">✗</td><td class="status-paid">✓</td>
+              <td class="status-paid">✓</td><td class="status-late">✗</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="legend">
+        <span><span class="dot status-paid"></span> Payé</span>
+        <span><span class="dot status-late"></span> Retard</span>
+        <span><span class="dot status-partial"></span> Partiel</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Campagnes ponctuelles actives</div>
+      <div style="padding:0.5rem 0; border-bottom:1px solid var(--color-border);">
+        <strong>Anniversaire — Octobre</strong>
+        <p style="font-size:0.85rem; color:var(--color-text-muted);">Montant fixe : 2 000 FCFA — 28/32 payés</p>
+        <div class="progress-bar"><div class="fill" style="width:87%"></div></div>
+      </div>
+      <div style="padding:0.75rem 0 0;">
+        <strong>Décès — Famille Diop</strong>
+        <p style="font-size:0.85rem; color:var(--color-text-muted);">Montant libre — Clôture dans 3 jours — Total : 45 000 FCFA</p>
+        <div class="progress-bar"><div class="fill" style="width:60%; background:var(--color-primary);"></div></div>
+      </div>
+    </div>
+
+    <a href="paiement-create.html" class="btn btn-primary" style="margin-top:0.5rem;">+ Enregistrer un paiement</a>
+  </main>
+</body>
+</html>

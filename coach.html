@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit & Statistiques — Coach</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header" style="background:#7c3aed;">
+    <h1>Supervision</h1>
+    <span class="role-badge">Coach — Lecture seule</span>
+  </header>
+
+  <nav class="app-nav">
+    <a href="dashboard.html" class="active">Statistiques</a>
+    <a href="#">Audit recettes</a>
+    <a href="#">Tableau croisé</a>
+    <a href="../login.html">Déconnexion</a>
+  </nav>
+
+  <main class="container">
+    <div class="card" style="background:#f5f3ff; border:1px solid #ddd6fe;">
+      <p style="font-size:0.85rem;">Vue d'audit — Classe Dev Web 2025</p>
+      <p style="font-size:0.75rem; color:var(--color-text-muted);">Accès lecture seule — aucune modification possible</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="value">1 920 000</div>
+        <div class="label">FCFA collectés (total)</div>
+      </div>
+      <div class="stat-card">
+        <div class="value" style="color:var(--color-success);">87%</div>
+        <div class="label">Taux recouvrement</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">6 400 000</div>
+        <div class="label">FCFA attendus (40 sem.)</div>
+      </div>
+      <div class="stat-card">
+        <div class="value" style="color:var(--color-danger);">5</div>
+        <div class="label">Apprenants en retard</div>
+      </div>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="card">
+        <div class="card-title">Recouvrement par mois</div>
+        <div style="display:flex; align-items:flex-end; gap:0.5rem; height:120px; padding-top:1rem;">
+          <div style="flex:1; text-align:center;">
+            <div style="background:var(--color-primary); height:60%; border-radius:4px 4px 0 0;"></div>
+            <span style="font-size:0.7rem;">M1</span>
+          </div>
+          <div style="flex:1; text-align:center;">
+            <div style="background:var(--color-primary); height:80%; border-radius:4px 4px 0 0;"></div>
+            <span style="font-size:0.7rem;">M2</span>
+          </div>
+          <div style="flex:1; text-align:center;">
+            <div style="background:var(--color-primary); height:95%; border-radius:4px 4px 0 0;"></div>
+            <span style="font-size:0.7rem;">M3</span>
+          </div>
+          <div style="flex:1; text-align:center;">
+            <div style="background:#94a3b8; height:70%; border-radius:4px 4px 0 0;"></div>
+            <span style="font-size:0.7rem;">M4</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Trésorerie ponctuelle</div>
+        <div style="padding:0.5rem 0; border-bottom:1px solid var(--color-border);">
+          <div style="display:flex; justify-content:space-between;">
+            <span>Anniversaires (cumul)</span>
+            <strong>64 000 FCFA</strong>
+          </div>
+        </div>
+        <div style="padding:0.5rem 0; border-bottom:1px solid var(--color-border);">
+          <div style="display:flex; justify-content:space-between;">
+            <span>Cas sociaux / Décès</span>
+            <strong>125 000 FCFA</strong>
+          </div>
+        </div>
+        <div style="padding:0.5rem 0;">
+          <div style="display:flex; justify-content:space-between;">
+            <span>Autres campagnes</span>
+            <strong>30 000 FCFA</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Retardataires — Semaine 12</div>
+      <table class="cross-table" style="font-size:0.85rem;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Apprenant</th>
+            <th>Semaines impayées</th>
+            <th>Dette estimée</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left;">Sow Mariama</td>
+            <td class="status-late">S4, S5, S12</td>
+            <td>15 000 FCFA</td>
+          </tr>
+          <tr>
+            <td style="text-align:left;">Ndiaye Fatou</td>
+            <td class="status-late">S7, S8, S9, S12</td>
+            <td>20 000 FCFA</td>
+          </tr>
+          <tr>
+            <td style="text-align:left;">Fall Ousmane</td>
+            <td class="status-late">S12</td>
+            <td>5 000 FCFA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Journal d'audit (dernières opérations)</div>
+      <ul class="notif-list">
+        <li class="notif-item">
+          <div class="notif-body">
+            <div class="notif-title">Paiement hebdo — Diallo A. — 5 000 FCFA (S12)</div>
+            <div class="notif-date">04/10/2025 14:32 — Saisi par Gérant</div>
+          </div>
+        </li>
+        <li class="notif-item">
+          <div class="notif-body">
+            <div class="notif-title">Campagne créée — Décès Famille Diop</div>
+            <div class="notif-date">01/10/2025 09:15 — Saisi par Gérant</div>
+          </div>
+        </li>
+        <li class="notif-item">
+          <div class="notif-body">
+            <div class="notif-title">Ventilation — Ba K. — 15 000 FCFA → S10-S12</div>
+            <div class="notif-date">28/09/2025 16:45 — Saisi par Gérant</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

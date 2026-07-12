@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon espace — Apprenant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Mon espace</h1>
+    <span class="role-badge">Apprenant</span>
+  </header>
+
+  <nav class="app-nav">
+    <a href="dashboard.html" class="active">Accueil</a>
+    <a href="#">Historique</a>
+    <a href="#">Notifications</a>
+    <a href="../login.html">Déconnexion</a>
+  </nav>
+
+  <main class="container">
+    <div class="card" style="border-left:4px solid var(--color-primary);">
+      <p style="font-size:0.85rem; color:var(--color-text-muted);">Bonjour,</p>
+      <h2 style="font-size:1.1rem;">Diallo Amadou</h2>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="value" style="color:var(--color-success);">12/12</div>
+        <div class="label">Semaines payées</div>
+      </div>
+      <div class="stat-card">
+        <div class="value" style="color:var(--color-success);">À jour</div>
+        <div class="label">Statut hebdo</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Avancement cotisations hebdomadaires</div>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">Semaine 12 / 40 — Montant : 5 000 FCFA/semaine</p>
+      <div class="progress-bar"><div class="fill" style="width:30%"></div></div>
+      <p style="font-size:0.75rem; color:var(--color-text-muted); margin-top:0.35rem;">30 % de la formation couverte</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Cotisations ponctuelles</div>
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:0.5rem 0; border-bottom:1px solid var(--color-border);">
+        <div>
+          <strong style="font-size:0.9rem;">Anniversaire Octobre</strong>
+          <p style="font-size:0.8rem; color:var(--color-text-muted);">2 000 FCFA — montant fixe</p>
+        </div>
+        <span style="background:#dcfce7; color:var(--color-success); padding:0.2rem 0.6rem; border-radius:999px; font-size:0.75rem; font-weight:600;">Payé</span>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:0.75rem 0 0;">
+        <div>
+          <strong style="font-size:0.9rem;">Décès — Famille Diop</strong>
+          <p style="font-size:0.8rem; color:var(--color-text-muted);">Montant libre — 3 jours restants</p>
+        </div>
+        <span style="background:#fef3c7; color:var(--color-warning); padding:0.2rem 0.6rem; border-radius:999px; font-size:0.75rem; font-weight:600;">À contribuer</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Notifications récentes</div>
+      <ul class="notif-list">
+        <li class="notif-item unread">
+          <div class="notif-icon info">📢</div>
+          <div class="notif-body">
+            <div class="notif-title">Nouvelle campagne — Décès Famille Diop</div>
+            <div class="notif-date">Il y a 2 heures</div>
+          </div>
+        </li>
+        <li class="notif-item">
+          <div class="notif-icon success">✓</div>
+          <div class="notif-body">
+            <div class="notif-title">Paiement S12 enregistré — 5 000 FCFA</div>
+            <div class="notif-date">Samedi 4 oct.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Derniers paiements</div>
+      <table class="cross-table" style="font-size:0.85rem;">
+        <thead>
+          <tr><th style="text-align:left;">Date</th><th>Type</th><th>Montant</th></tr>
+        </thead>
+        <tbody>
+          <tr><td style="text-align:left;">04/10/2025</td><td>Hebdo S12</td><td>5 000</td></tr>
+          <tr><td style="text-align:left;">28/09/2025</td><td>Anniversaire</td><td>2 000</td></tr>
+          <tr><td style="text-align:left;">27/09/2025</td><td>Hebdo S11</td><td>5 000</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
